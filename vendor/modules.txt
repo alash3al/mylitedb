@@ -1,0 +1,30 @@
+# github.com/alash3al/go-color v1.7.0
+github.com/alash3al/go-color
+# github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
+github.com/juju/errors
+# github.com/mattn/go-colorable v0.0.9
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.4
+github.com/mattn/go-isatty
+# github.com/mattn/go-sqlite3 v1.10.0
+github.com/mattn/go-sqlite3
+# github.com/satori/go.uuid v1.2.0
+github.com/satori/go.uuid
+# github.com/siddontang/go v0.0.0-20180604090527-bdc77568d726
+github.com/siddontang/go/hack
+github.com/siddontang/go/sync2
+# github.com/siddontang/go-log v0.0.0-20180807004314-8d05993dda07
+github.com/siddontang/go-log/log
+github.com/siddontang/go-log/loggers
+# github.com/siddontang/go-mysql v0.0.0-20190103003530-f6331bc425f7
+github.com/siddontang/go-mysql/mysql
+github.com/siddontang/go-mysql/server
+github.com/siddontang/go-mysql/packet
+# github.com/xwb1989/sqlparser v0.0.0-20180606152119-120387863bf2
+github.com/xwb1989/sqlparser
+github.com/xwb1989/sqlparser/dependency/bytes2
+github.com/xwb1989/sqlparser/dependency/querypb
+github.com/xwb1989/sqlparser/dependency/sqltypes
+github.com/xwb1989/sqlparser/dependency/hack
+# golang.org/x/sys v0.0.0-20190102155601-82a175fd1598
+golang.org/x/sys/unix
