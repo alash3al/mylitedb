@@ -177,7 +177,7 @@ func (h *SessionHandler) query(query string, args ...interface{}) (*mysql.Result
 				if t.Elem().Kind() == reflect.Uint || t.Elem().Kind() == reflect.Uint8 {
 					args[ii] = string((*(val.(*interface{}))).([]uint8))
 				} else {
-					// TODO: handle that unknown type ?
+					return nil, errors.New("unsupported type <" + (t.Kind().String()) + ">")
 				}
 			default:
 				args[ii] = (*(val.(*interface{}))).(string)
