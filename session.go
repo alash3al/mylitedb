@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"reflect"
 	"strings"
 
@@ -168,6 +167,7 @@ func (h *SessionHandler) query(query string, args ...interface{}) (*mysql.Result
 				args[ii] = nil
 				continue
 			}
+
 			switch t.Kind() {
 			case reflect.Int64, reflect.Int32, reflect.Int:
 				args[ii] = (*(val.(*interface{}))).(int64)
@@ -177,10 +177,10 @@ func (h *SessionHandler) query(query string, args ...interface{}) (*mysql.Result
 				if t.Elem().Kind() == reflect.Uint || t.Elem().Kind() == reflect.Uint8 {
 					args[ii] = string((*(val.(*interface{}))).([]uint8))
 				} else {
-					fmt.Println("#)- ", t.Elem().Kind())
+					// TODO: handle that unknown type ?
 				}
 			default:
-				fmt.Println(t.Kind())
+				args[ii] = (*(val.(*interface{}))).(string)
 			}
 		}
 		values = append(values, args)

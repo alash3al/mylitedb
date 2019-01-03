@@ -14,7 +14,7 @@ import (
 var (
 	flagListenAddr = flag.String("listen", ":4000", "the caching proxy listen address")
 	flagDataDir    = flag.String("data", "./data", "the databases directory")
-	flagOptions    = flag.String("options", "cache=shared&_journal=memory", "the default database options (uri style)")
+	flagOptions    = flag.String("options", "cache=shared&_journal=wal", "the default database options (uri style)")
 	flagRoot       = flag.String("root", "root:root", "the default root info (user:secret)")
 	flagVerbose    = flag.Bool("verbose", false, "verbose to the output")
 )
